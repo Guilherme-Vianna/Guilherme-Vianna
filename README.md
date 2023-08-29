@@ -10,7 +10,9 @@
 <a href="https://www.linkedin.com/in/guilherme-vianna-838053201/" target="_blank"><img loading="lazy" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
 
  ## Minhas Métricas 
+ <div>
 <a href="https://github.com/Guilherme-Vianna">
 <img loading="lazy" height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Guilherme-Vianna&layout=compact&langs_count=7&theme=tokyonigh"/>
 <img loading="lazy" height="180em" src="https://github-readme-stats.vercel.app/api?username=Guilherme-Vianna&show_icons=true&theme=tokyonigh&include_all_commits=true&count_private=true"/>
+ </div>
 
