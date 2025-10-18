@@ -35,4 +35,4 @@ Sou estudante do último período de **Ciência da Computação**, apaixonado po
 Atualmente trabalho com **C#**, **Node.js**, **Ruby**, e estou aprendendo **Lua**.  
 ---
 
-LINK DO PROJETO: https://roadmap.sh/projects/single-page-cv
+https://roadmap.sh/projects/single-page-cv
