@@ -7,8 +7,8 @@
   <a href="https://github.com/Guilherme-Vianna" target="_blank">
     <img src="https://img.shields.io/badge/-Guilherme--Vianna-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
   </a>
-  <a href="mailto:guilhermemataveli@gmail.com">
-    <img src="https://img.shields.io/badge/Email-guilhermemataveli%40gmail.com-red?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+  <a href="mailto:mataveli91@gmail.com">
+    <img src="https://img.shields.io/badge/Email-mataveli91%40gmail.com-red?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
   </a>
 </p>
 
