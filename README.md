@@ -1,5 +1,8 @@
-<div>
-<a href="https://github.com/Guilherme-Vianna">
-<img loading="lazy" height="180em" src="https://github-readme-stats.vercel.app/api?username=Guilherme-Vianna&show_icons=true&theme=tokyonigh&include_all_commits=true&count_private=true"/>
-</div>
+<a href="https://www.linkedin.com/in/guilhermemataveli">
+  <img align="left" width="26px" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"  />
+</a>
 
+<br />
+
+https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Guilherme-Vianna&layout=compact&langs_count=8&hide_border=true
+<br />
