@@ -1,167 +1,341 @@
 <!DOCTYPE html>
-<html lang="en" class="h-full">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link
-      rel="stylesheet"
-      href="public/font-awesome/css/font-awesome.min.css"
+    <title>Guilherme Vianna · Desenvolvedor Full Stack</title>
+    <meta
+      name="description"
+      content="Portfólio de Guilherme Vianna, desenvolvedor full stack. Aplicações web completas com Next.js, FastAPI, PostgreSQL e Firebase."
     />
+    <meta property="og:title" content="Guilherme Vianna · Desenvolvedor Full Stack" />
+    <meta
+      property="og:description"
+      content="Aplicações web completas, do banco de dados à interface."
+    />
+    <meta property="og:image" content="public/projects/barber.png" />
+    <link rel="icon" href="public/eu.jpg" />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="flex flex-col h-full">
-    <header class="flex items-center justify-center py-10 w-full">
-      <div
-        class="flex w-1/2 justify-center md:justify-between border-b border-gray-400 pb-8"
-      >
-        <div class="hidden md:inline">
-          <strong>Guilherme Vianna</strong>
-        </div>
-        <nav class="flex gap-5 md:gap-10">
-          <a href="index.html">Inicio</a>
-          <a href="about.html">Sobre mim</a>
+  <body>
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <symbol id="i-github" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+      </symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M8 11v5" /><path d="M8 8v.01" /><path d="M12 16v-5" /><path d="M16 16v-3a2 2 0 1 0 -4 0" />
+        <path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" />
+      </symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" />
+      </symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+      </symbol>
+      <symbol id="i-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" />
+      </symbol>
+    </svg>
+
+    <header class="site-header">
+      <div class="container">
+        <a href="#" class="brand">Guilherme Vianna</a>
+        <nav class="nav" aria-label="Principal">
+          <a href="#projetos">Projetos</a>
+          <a href="#sobre">Sobre</a>
+          <a href="https://wa.me/5527998751326" class="nav-cta" target="_blank" rel="noopener">Fale comigo</a>
         </nav>
       </div>
     </header>
 
-    <main class="flex-1 flex justify-center">
-      <div class="flex flex-col md:flex-row w-1/2 gap-5 py-8">
-        <div>
-          <img src="./public/eu.jpg" alt="Foto de Guilherme Vianna" />
-        </div>
-        <div>
-          <p>
-            Olá, meu nome é Guilherme Vianna, sou estudante do último período de
-            Ciência da Computação. Programador backend em C#, Node, Ruby e
-            aprendendo Lua. Atualmente estou focando em aprimorar meus
-            conhecimentos em desenvolvimento front-end e matemática para me
-            tornar um profissional mais completo.
-            <br />
-            <br />
-            Já trabalhei em diversos projetos de vários nichos, a maioria deles
-            foi estudos de caso que eu fiz para testar algum conhecimento ou
-            resolver algum problema
-            <br />
-            <br />
-            <a
-              href="https://github.com/Guilherme-Vianna/lgpd-helper"
-              class="text-blue-900"
-              >LGPD Helper</a
-            >
-            <br />
-            Foi um protótipo que visava agilizar um processo de ocultação na
-            prefeitura da minha cidade, quando um documento era colocado no
-            portal de transparência, o mesmo não poderia conter dados sensíveis
-            dos envolvidos, esse programa coloca tarjas pretas nos dados
-            sensíveis automáticamente
-            <br />
-            <br />
-            <a
-              href="https://github.com/Guilherme-Vianna/image-upload-api"
-              class="text-blue-900"
-              >Image Upload</a
-            >
-            <br />
-            Um projeto feito para estudo de Streams, ele consegue subir imagens
-            enormes de GB's de tamanho apenas com 256MB de RAM, usando o
-            recursos de Streams em disco para evitar alocações de memória
-            desnecessários
-            <br />
-            <br />
-            <a
-              href="https://www.reactormodel.com/software/"
-              class="text-blue-900"
-              >ReactorModel</a
-            >
-            <br />
-            O projeto mais inovador que estou trabalhando, ela visa usar
-            química, ciência de dados e muita matemática combinada para gerar
-            componentes químicos otimizados, mais eficientes e com um melhor
-            custo de produção.
-          </p>
+    <main>
+      <div class="hero">
+        <div class="container">
+          <div>
+            <p class="eyebrow">// desenvolvedor full stack</p>
+            <h1>Construo aplicações web completas, do banco de dados à interface.</h1>
+            <p class="lead">
+              Sou Guilherme Vianna, formando em Ciência da Computação. Desenho APIs em
+              Python e C#, modelo dados em PostgreSQL e entrego interfaces em Next.js
+              pensadas para quem vai usar no dia a dia, principalmente no celular.
+            </p>
+            <div class="actions">
+              <a href="https://wa.me/5527998751326" class="btn btn-cta" target="_blank" rel="noopener">
+                <svg><use href="#i-phone" /></svg> Entrar em contato
+              </a>
+              <a href="#projetos" class="btn">Ver projetos</a>
+              <a href="https://github.com/Guilherme-Vianna" class="btn" target="_blank" rel="noopener">
+                <svg><use href="#i-github" /></svg> GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/guilhermemataveli/" class="btn" target="_blank" rel="noopener">
+                <svg><use href="#i-linkedin" /></svg> LinkedIn
+              </a>
+            </div>
+          </div>
+          <img src="public/eu.jpg" alt="Foto de Guilherme Vianna" class="hero-photo" width="220" height="220" />
         </div>
       </div>
+
+      <section id="projetos">
+        <div class="container">
+          <div class="section-head">
+            <h2>Projetos em produção</h2>
+            <p>
+              Produtos completos, cada um com API própria, banco de dados, autenticação e
+              interface publicada. Todos estão no ar e podem ser testados.
+            </p>
+          </div>
+
+          <!-- Navalha -->
+          <article class="project">
+            <div class="project-media">
+              <a class="browser" href="https://project-barber-ui.vercel.app/agenda" target="_blank" rel="noopener" aria-label="Abrir Navalha">
+                <div class="browser-bar"><span></span><span></span><span></span><span class="url">project-barber-ui.vercel.app/agenda</span></div>
+                <img src="public/projects/barber.png" alt="Tela inicial do Navalha mostrando a agenda do dia de uma barbearia" loading="lazy" width="1440" height="900" />
+              </a>
+            </div>
+            <div>
+              <p class="project-tag">01 · Agendamento</p>
+              <h3><a href="projetos/navalha.html">Navalha</a></h3>
+              <p>
+                Agenda online para barbearias. O dono cadastra serviços, preços e horário de
+                funcionamento, e compartilha um link público. O cliente escolhe o serviço e
+                o horário livre e marca sozinho, sem criar conta e sem troca de mensagens no
+                WhatsApp.
+              </p>
+              <ul class="features">
+                <li>Horários livres calculados a partir do expediente, da duração do serviço e das ausências do barbeiro</li>
+                <li>Agenda do dia com faturamento previsto e botão para bloquear um período</li>
+                <li>Preço do serviço congelado no momento da reserva e histórico de remarcações</li>
+                <li>Histórico completo de alterações (SCD Tipo 4) em todas as tabelas</li>
+              </ul>
+              <ul class="stack">
+                <li>Next.js 16</li><li>React 19</li><li>Tailwind v4</li><li>FastAPI</li><li>PostgreSQL</li><li>SQLAlchemy async</li><li>Firebase Auth</li><li>Redis</li><li>Cloud Run</li>
+              </ul>
+              <div class="links">
+                <a class="btn btn-primary" href="projetos/navalha.html">Ver detalhes</a>
+                <a class="btn" href="https://project-barber-ui.vercel.app/agenda" target="_blank" rel="noopener"><svg><use href="#i-external" /></svg> Ver ao vivo</a>
+                <a class="btn" href="https://github.com/Guilherme-Vianna/project-barber-ui" target="_blank" rel="noopener"><svg><use href="#i-github" /></svg> Front-end</a>
+                <a class="btn" href="https://github.com/Guilherme-Vianna/project-barber-api" target="_blank" rel="noopener"><svg><use href="#i-github" /></svg> API</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Brabos Delivery -->
+          <article class="project">
+            <div class="project-media">
+              <a class="browser" href="https://brabos-delivery-ui.vercel.app/pedidos" target="_blank" rel="noopener" aria-label="Abrir Brabos Delivery">
+                <div class="browser-bar"><span></span><span></span><span></span><span class="url">brabos-delivery-ui.vercel.app/pedidos</span></div>
+                <img src="public/projects/delivery.png" alt="Tela inicial do Brabos Delivery com destaques de pedidos em tempo real, notificações e financeiro" loading="lazy" width="1440" height="900" />
+              </a>
+            </div>
+            <div>
+              <p class="project-tag">02 · Delivery</p>
+              <h3><a href="projetos/brabos-delivery.html">Brabos Delivery</a></h3>
+              <p>
+                Sistema de delivery próprio para hamburguerias, sem a comissão dos
+                aplicativos. A loja ganha um cardápio com link próprio, recebe os pedidos em
+                tempo real e acompanha as vendas. Entregadores confirmam a entrega pelo
+                celular e o cliente acompanha o status do pedido.
+              </p>
+              <ul class="features">
+                <li>Três perfis no mesmo app: dono da loja, cliente (sem cadastro obrigatório) e entregador por convite</li>
+                <li>Notificações push via Firebase Cloud Messaging, instalável como PWA no celular</li>
+                <li>Pagamento online com Stripe, meio a meio, ponto da carne, taxa de entrega e pedido mínimo</li>
+                <li>Horário que atravessa a meia-noite, fechamento emergencial e painel financeiro</li>
+              </ul>
+              <ul class="stack">
+                <li>Next.js 16</li><li>React 19</li><li>Tailwind v4</li><li>FastAPI</li><li>PostgreSQL</li><li>Firebase FCM</li><li>Stripe</li><li>GCS / R2</li><li>PWA</li>
+              </ul>
+              <a class="client" href="https://www.instagram.com/brabosburguerr01/" target="_blank" rel="noopener">
+                <img src="public/projects/brabos.jpg" alt="Logo da Brabo’s Burguer" width="56" height="56" loading="lazy" />
+                <span>
+                  <span class="client-label">Cliente</span>
+                  <strong>Brabo’s Burguer</strong>
+                  <span class="client-role">Hamburgueria e pizzaria em Jerônimo Monteiro (ES) · @brabosburguerr01</span>
+                </span>
+              </a>
+              <div class="links">
+                <a class="btn btn-primary" href="projetos/brabos-delivery.html">Ver detalhes</a>
+                <a class="btn" href="https://brabos-delivery-ui.vercel.app/pedidos" target="_blank" rel="noopener"><svg><use href="#i-external" /></svg> Ver ao vivo</a>
+                <a class="btn" href="https://github.com/Guilherme-Vianna/brabos-delivery-ui" target="_blank" rel="noopener"><svg><use href="#i-github" /></svg> Front-end</a>
+                <a class="btn" href="https://github.com/Guilherme-Vianna/brabos-delivery-api" target="_blank" rel="noopener"><svg><use href="#i-github" /></svg> API</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Study -->
+          <article class="project">
+            <div class="project-media">
+              <a class="browser" href="https://project-study-ui.vercel.app/" target="_blank" rel="noopener" aria-label="Abrir Project Study">
+                <div class="browser-bar"><span></span><span></span><span></span><span class="url">project-study-ui.vercel.app</span></div>
+                <img src="public/projects/study.png" alt="Tela inicial do Project Study com o plano de estudos semanal de uma aluna" loading="lazy" width="1440" height="900" />
+              </a>
+            </div>
+            <div>
+              <p class="project-tag">03 · Educação</p>
+              <h3><a href="projetos/project-study.html">Project Study</a></h3>
+              <p>
+                Plataforma para professores particulares montarem planos de estudo e
+                acompanharem seus alunos. O professor cria matérias e exercícios, monta um
+                plano semanal e convida o aluno por link. O aluno vê o que precisa estudar e
+                marca o que já concluiu.
+              </p>
+              <ul class="features">
+                <li>Papéis de professor e aluno via custom claims do Firebase, mutuamente exclusivos</li>
+                <li>Convites de matrícula por link de uso único</li>
+                <li>Banco de exercícios com imagens e filtros por matéria e tipo</li>
+                <li>Progresso semanal do aluno visível para o professor</li>
+              </ul>
+              <ul class="stack">
+                <li>Next.js 16</li><li>React 19</li><li>Tailwind v4</li><li>FastAPI</li><li>PostgreSQL</li><li>Firebase Auth</li><li>Cloud Storage</li><li>Vitest</li>
+              </ul>
+              <a class="client" href="https://www.instagram.com/fromenglishlanguage/" target="_blank" rel="noopener">
+                <img src="public/projects/fromenglish.jpg" alt="Logo da From English" width="56" height="56" loading="lazy" />
+                <span>
+                  <span class="client-label">Cliente</span>
+                  <strong>From English</strong>
+                  <span class="client-role">Escola de inglês com mais de 100 alunos · @fromenglishlanguage</span>
+                </span>
+              </a>
+              <div class="links">
+                <a class="btn btn-primary" href="projetos/project-study.html">Ver detalhes</a>
+                <a class="btn" href="https://project-study-ui.vercel.app/" target="_blank" rel="noopener"><svg><use href="#i-external" /></svg> Ver ao vivo</a>
+                <a class="btn" href="https://github.com/Guilherme-Vianna/project-study-ui" target="_blank" rel="noopener"><svg><use href="#i-github" /></svg> Front-end</a>
+                <a class="btn" href="https://github.com/Guilherme-Vianna/project-study-api" target="_blank" rel="noopener"><svg><use href="#i-github" /></svg> API</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- FisioTrainer -->
+          <article class="project">
+            <div class="project-media">
+              <div class="browser">
+                <div class="browser-bar"><span></span><span></span><span></span><span class="url">projeto para cliente · código privado</span></div>
+                <div class="logo-media">
+                  <img src="public/projects/fisio-logo.png" alt="Logo do FisioTrainer" loading="lazy" />
+                </div>
+              </div>
+            </div>
+            <div>
+              <p class="project-tag">04 · Saúde · cliente real</p>
+              <h3><a href="projetos/fisiotrainer.html">FisioTrainer</a></h3>
+              <p>
+                Sistema de gestão desenvolvido sob medida para a clínica do fisioterapeuta
+                Ruan Ramiro.
+                Centraliza pacientes, avaliações, agenda e financeiro em um só lugar, e dá ao
+                paciente um portal próprio para acompanhar seus compromissos.
+              </p>
+              <ul class="features">
+                <li>Agendamento assistido com grade recorrente, salas e serviços avulsos</li>
+                <li>Planos com parcelamento, renovação e créditos de remarcação</li>
+                <li>Biblioteca de exercícios e exames com campos calculados, exportação em PDF</li>
+                <li>Pré-cadastro público com fila de curadoria e log de auditoria</li>
+              </ul>
+              <ul class="stack">
+                <li>Next.js 16</li><li>Prisma 7</li><li>PostgreSQL (Neon)</li><li>NextAuth v5</li><li>shadcn/ui</li><li>S3</li><li>Vitest</li><li>Playwright</li>
+              </ul>
+              <a class="client" href="https://www.instagram.com/fisiotrainer.ruanramiro/" target="_blank" rel="noopener">
+                <img src="public/projects/ruan.jpg" alt="Foto de Ruan Ramiro" width="56" height="56" loading="lazy" />
+                <span>
+                  <span class="client-label">Cliente</span>
+                  <strong>Ruan Ramiro</strong>
+                  <span class="client-role">Fisioterapeuta e Profissional de Educação Física · @fisiotrainer.ruanramiro</span>
+                </span>
+              </a>
+              <div class="links">
+                <a class="btn btn-primary" href="projetos/fisiotrainer.html">Ver detalhes</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+
+      <section id="outros">
+        <div class="container">
+          <div class="section-head">
+            <h2>Outros trabalhos</h2>
+            <p>Pesquisa e desenvolvimento em paralelo aos produtos.</p>
+          </div>
+          <div class="others">
+            <a class="card" href="https://www.reactormodel.com/software/" target="_blank" rel="noopener">
+              <span class="num">P&amp;D</span>
+              <h4>ReactorModel</h4>
+              <p>Combina química, ciência de dados e matemática para gerar compostos químicos otimizados, mais eficientes e mais baratos de produzir.</p>
+              <span class="more">reactormodel.com →</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre">
+        <div class="container">
+          <div class="section-head">
+            <h2>Sobre mim</h2>
+          </div>
+          <div class="about">
+            <div>
+              <p>
+                Cresci entre computadores: meu pai era técnico de informática e ganhei meu
+                primeiro PC aos 9 anos, ainda sem internet. Na adolescência um amigo me
+                apresentou a linguagem C e escrevi meus primeiros programas num notebook
+                velho.
+              </p>
+              <p>
+                Um dia depois de me matricular em Ciência da Computação eu já estava
+                procurando estágio, e foi lá que aprendi como software é feito de verdade.
+                Desde então trabalho com backend e venho ampliando o foco para o front-end,
+                para entregar produtos inteiros.
+              </p>
+              <p>
+                Paralelamente, estou construindo uma base sólida em matemática, com o
+                objetivo de me especializar em análise de dados.
+              </p>
+            </div>
+            <dl class="skills">
+              <dt>Back-end</dt>
+              <dd><ul class="stack"><li>Python</li><li>FastAPI</li><li>C# / .NET</li><li>Node.js</li><li>Ruby</li></ul></dd>
+              <dt>Front-end</dt>
+              <dd><ul class="stack"><li>TypeScript</li><li>React</li><li>Next.js</li><li>Tailwind CSS</li></ul></dd>
+              <dt>Dados e infraestrutura</dt>
+              <dd><ul class="stack"><li>PostgreSQL</li><li>Redis</li><li>Docker</li><li>Google Cloud Run</li><li>Firebase</li><li>Vercel</li></ul></dd>
+              <dt>Qualidade</dt>
+              <dd><ul class="stack"><li>pytest</li><li>Vitest</li><li>Playwright</li><li>Testing Library</li></ul></dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato">
+        <div class="container">
+          <div class="section-head">
+            <h2>Vamos conversar</h2>
+            <p>Estou aberto a oportunidades e projetos. Pode me chamar por e-mail, WhatsApp ou LinkedIn.</p>
+          </div>
+          <div class="actions">
+            <a href="https://wa.me/5527998751326" class="btn btn-cta" target="_blank" rel="noopener"><svg><use href="#i-phone" /></svg> (27) 99875-1326</a>
+            <a href="mailto:mataveli91@gmail.com" class="btn"><svg><use href="#i-mail" /></svg> mataveli91@gmail.com</a>
+            <a href="https://www.linkedin.com/in/guilhermemataveli/" class="btn" target="_blank" rel="noopener"><svg><use href="#i-linkedin" /></svg> LinkedIn</a>
+            <a href="https://github.com/Guilherme-Vianna" class="btn" target="_blank" rel="noopener"><svg><use href="#i-github" /></svg> GitHub</a>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer class="w-full flex justify-center py-10">
-      <div
-        class="flex w-1/2 justify-between items-center border-t border-gray-400 pt-8 text-gray-700"
-      >
-        <span>© 2025 Guilherme Mataveli Gonçalves Vianna</span>
-        <div class="flex gap-6">
-          <a
-            href="https://github.com/Guilherme-Vianna"
-            class="hover:rotate-6 sm:p-1"
-          >
-            <svg
-              viewBox="0 0 24 24"
-              role="img"
-              width="24"
-              height="24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="inline-block size-6 scale-125 fill-transparent stroke-current stroke-2 opacity-90 group-hover:fill-transparent sm:scale-110"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <path
-                d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
-              ></path>
-            </svg>
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/guilhermemataveli/"
-            class="hover:rotate-6 sm:p-1"
-          >
-            <svg
-              viewBox="0 0 24 24"
-              role="img"
-              width="24"
-              height="24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="inline-block size-6 scale-125 fill-transparent stroke-current stroke-2 opacity-90 group-hover:fill-transparent sm:scale-110"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <path d="M8 11v5"></path>
-              <path d="M8 8v.01"></path>
-              <path d="M12 16v-5"></path>
-              <path d="M16 16v-3a2 2 0 1 0 -4 0"></path>
-              <path
-                d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z"
-              ></path>
-            </svg>
-          </a>
-          <a href="mailto:mataveli91@gmail.com" class="hover:rotate-6 sm:p-1">
-            <svg
-              viewBox="0 0 24 24"
-              role="img"
-              width="24"
-              height="24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="inline-block size-6 scale-125 fill-transparent stroke-current stroke-2 opacity-90 group-hover:fill-transparent sm:scale-110"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <path
-                d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"
-              ></path>
-              <path d="M3 7l9 6l9 -6"></path>
-            </svg>
-          </a>
+    <footer class="site-footer">
+      <div class="container">
+        <span>© <span id="year">2026</span> Guilherme Mataveli Gonçalves Vianna</span>
+        <div class="social">
+          <a href="https://github.com/Guilherme-Vianna" aria-label="GitHub" target="_blank" rel="noopener"><svg><use href="#i-github" /></svg></a>
+          <a href="https://www.linkedin.com/in/guilhermemataveli/" aria-label="LinkedIn" target="_blank" rel="noopener"><svg><use href="#i-linkedin" /></svg></a>
+          <a href="mailto:mataveli91@gmail.com" aria-label="E-mail"><svg><use href="#i-mail" /></svg></a>
+          <a href="https://wa.me/5527998751326" aria-label="WhatsApp (27) 99875-1326" target="_blank" rel="noopener"><svg><use href="#i-phone" /></svg></a>
         </div>
       </div>
     </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>

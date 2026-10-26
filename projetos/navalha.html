@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navalha · Guilherme Vianna</title>
+    <meta name="description" content="Agenda online para barbearias: o cliente marca sozinho pelo link da barbearia e o barbeiro só se preocupa com o corte." />
+    <link rel="icon" href="../public/eu.jpg" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <symbol id="i-github" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+      </symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M8 11v5" /><path d="M8 8v.01" /><path d="M12 16v-5" /><path d="M16 16v-3a2 2 0 1 0 -4 0" />
+        <path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" />
+      </symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" />
+      </symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+      </symbol>
+      <symbol id="i-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" />
+      </symbol>
+    </svg>
+
+    <header class="site-header">
+      <div class="container">
+        <a href="../index.html" class="brand">Guilherme Vianna</a>
+        <nav class="nav" aria-label="Principal">
+          <a href="../index.html#projetos">Projetos</a>
+          <a href="../index.html#sobre">Sobre</a>
+          <a href="https://wa.me/5527998751326" class="nav-cta" target="_blank" rel="noopener">Fale comigo</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="hero project-hero">
+        <div class="container">
+          <a href="../index.html#projetos" class="back">← Todos os projetos</a>
+          <p class="eyebrow">01 · Agendamento para barbearias</p>
+          <h1>Navalha</h1>
+          <p class="lead">Agenda online para barbearias: o cliente marca sozinho pelo link da barbearia e o barbeiro só se preocupa com o corte.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://project-barber-ui.vercel.app/agenda" target="_blank" rel="noopener"><svg><use href="#i-external" /></svg> Ver ao vivo</a>
+            <a class="btn" href="https://github.com/Guilherme-Vianna/project-barber-ui" target="_blank" rel="noopener"><svg><use href="#i-github" /></svg> Front-end</a>
+            <a class="btn" href="https://github.com/Guilherme-Vianna/project-barber-api" target="_blank" rel="noopener"><svg><use href="#i-github" /></svg> API</a>
+          </div>
+
+        <div class="gallery">
+          <a class="browser" href="https://project-barber-ui.vercel.app/agenda" target="_blank" rel="noopener">
+            <div class="browser-bar"><span></span><span></span><span></span><span class="url">project-barber-ui.vercel.app/agenda</span></div>
+            <img src="../public/projects/barber.png" alt="Navalha no computador" width="1440" height="900" />
+          </a>
+          <figure class="phone">
+            <img src="../public/projects/barber-mobile.png" alt="Navalha no celular" width="780" height="1688" />
+          </figure>
+        </div>
+        </div>
+      </div>
+
+      <section>
+        <div class="container split">
+          <div>
+            <h2>O problema</h2>
+            <p>Em barbearia pequena, o agendamento acontece no WhatsApp. O barbeiro para o corte para responder mensagem, confere horário de cabeça e ainda lida com cliente que esquece ou desmarca em cima da hora.</p>
+          </div>
+          <div>
+            <h2>A solução</h2>
+            <p>O Navalha dá a cada barbearia um link público de agendamento. O dono define serviços, preços e expediente uma vez; a partir daí os horários livres aparecem sozinhos para o cliente, que marca, remarca ou cancela sem criar conta.</p>
+
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="section-head">
+            <h2>Como funciona</h2>
+            <p>Toda operação foi pensada para levar quatro toques ou menos.</p>
+          </div>
+          <ol class="steps">
+            <li class="card step"><span class="num">01</span><h4>Cadastro da barbearia</h4><p>Nome da barbearia e do dono. Serviços entram com sugestões de um toque (corte, barba, sobrancelha).</p></li>
+            <li class="card step"><span class="num">02</span><h4>Expediente</h4><p>Dias da semana, horário de abertura e fechamento e duração do bloco. Repete toda semana.</p></li>
+            <li class="card step"><span class="num">03</span><h4>Link compartilhado</h4><p>O dono copia ou compartilha o link /b/&lt;barbearia&gt; no Instagram e no WhatsApp.</p></li>
+            <li class="card step"><span class="num">04</span><h4>Cliente agenda</h4><p>Escolhe serviço, dia e horário livre, digita o nome e confirma. Pode remarcar ou cancelar depois pelo mesmo link.</p></li>
+          </ol>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="section-head">
+            <h2>Funcionalidades</h2>
+          </div>
+          <div class="feature-grid">
+            <div class="card"><h4>Agenda do dia</h4><p>Faixa com 14 dias, contagem regressiva para o próximo cliente, faturamento previsto e blocos livres e ocupados.</p></div>
+            <div class="card"><h4>Encaixe rápido</h4><p>Toque num horário livre para encaixar quem chegou sem marcar.</p></div>
+            <div class="card"><h4>Ausências</h4><p>Bloqueie um período (almoço, imprevisto) e a API cancela os agendamentos que caem nele, com dupla confirmação.</p></div>
+            <div class="card"><h4>Remarcação segura</h4><p>O cliente vê o horário antigo e o novo antes de confirmar. Horário ocupado por outra pessoa some da grade na hora.</p></div>
+            <div class="card"><h4>Sem conta para o cliente</h4><p>Cada navegador guarda um token de dispositivo, que identifica a reserva sem pedir cadastro.</p></div>
+            <div class="card"><h4>Histórico de mudanças</h4><p>Toda reserva tem um log de criação, remarcação e cancelamento, e todas as tabelas têm histórico (SCD Tipo 4).</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container split">
+          <div>
+            <h2>Por dentro</h2>
+            <ul class="features"><li>API em FastAPI com três camadas (API → Service → Repository), testada com pytest</li><li>Horários livres calculados a partir do expediente, agendamentos e ausências: nenhum &quot;slot&quot; é gravado no banco</li><li>Preço do serviço congelado no momento da reserva</li><li>Front-end Next.js renderizado no servidor; o token fica em cookie httpOnly e o navegador nunca chama a API direto</li><li>Cache opcional com Redis e deploy em Google Cloud Run</li></ul>
+            <ul class="stack"><li>Next.js 16</li><li>React 19</li><li>Tailwind v4</li><li>FastAPI</li><li>Python 3.14</li><li>PostgreSQL</li><li>SQLAlchemy async</li><li>Alembic</li><li>Firebase Auth</li><li>Redis</li><li>Cloud Run</li></ul>
+          </div>
+          <div>
+            <p class="code-label">Resposta da API: horário de atendimento (resumida)</p>
+            <pre class="code"><code>GET /api/v1/barbershops/{id}/schedule
+
+{
+  &quot;slot_minutes&quot;: 30,
+  &quot;days&quot;: [
+    { &quot;weekday&quot;: 1, &quot;opens_at&quot;: &quot;09:00:00&quot;, &quot;closes_at&quot;: &quot;19:00:00&quot; },
+    { &quot;weekday&quot;: 5, &quot;opens_at&quot;: &quot;08:00:00&quot;, &quot;closes_at&quot;: &quot;14:00:00&quot; }
+  ]
+}</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-band">
+        <div class="container">
+          <h2>Precisa de um sistema assim para o seu negócio?</h2>
+          <p>Conte o que você precisa e eu respondo com uma proposta.</p>
+          <div class="actions">
+            <a href="https://wa.me/5527998751326" class="btn btn-cta" target="_blank" rel="noopener"><svg><use href="#i-phone" /></svg> Conversar no WhatsApp</a>
+            <a href="mailto:mataveli91@gmail.com" class="btn"><svg><use href="#i-mail" /></svg> Enviar e-mail</a>
+          </div>
+        </div>
+      </section>
+
+      <nav class="pager container" aria-label="Outros projetos">
+        <a href="fisiotrainer.html"><span>← Anterior</span>FisioTrainer</a>
+        <a href="brabos-delivery.html" class="next"><span>Próximo →</span>Brabos Delivery</a>
+      </nav>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>© <span id="year">2026</span> Guilherme Mataveli Gonçalves Vianna</span>
+        <div class="social">
+          <a href="https://github.com/Guilherme-Vianna" aria-label="GitHub" target="_blank" rel="noopener"><svg><use href="#i-github" /></svg></a>
+          <a href="https://www.linkedin.com/in/guilhermemataveli/" aria-label="LinkedIn" target="_blank" rel="noopener"><svg><use href="#i-linkedin" /></svg></a>
+          <a href="mailto:mataveli91@gmail.com" aria-label="E-mail"><svg><use href="#i-mail" /></svg></a>
+          <a href="https://wa.me/5527998751326" aria-label="WhatsApp (27) 99875-1326" target="_blank" rel="noopener"><svg><use href="#i-phone" /></svg></a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
